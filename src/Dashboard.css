@@ -1,0 +1,71 @@
+.dashboard-content {
+    padding: 20px; /* Maintained padding */
+    background-color: #f4f4f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex-grow: 1; /* Allow the dashboard to grow and take available space */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-left: 50px; /* Space for the sidebar */
+    margin-top: 30px; /* Space for the navbar */
+    }
+
+.dashboard-title {
+    text-align: center; /* Centered title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.stats-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the boxes evenly */
+    margin-bottom: 10px; /* Space below stats */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.stat-box {
+    background-color: #fff; /* White background for boxes */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1px; /* Padding inside the boxes */
+    flex: 1 1 calc(33% - 10px); /* Flex basis for responsiveness */
+    min-width: 180px; /* Minimum width for the boxes */
+    text-align: center; /* Center text in the box */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Shadow for boxes */
+    transition: box-shadow 0.3s; /* Smooth shadow transition */
+    margin: 5px; /* Add margin for spacing */
+}
+
+.chart-title {
+    color: #555; /* Color for chart titles */
+    margin: 10px 0; /* Margins around chart titles */
+    text-align: center; /* Centered titles */
+}
+
+.dual-chart-container {
+    display: flex; /* Use flexbox to align charts side by side */
+    justify-content: space-between; /* Space out the charts */
+    gap: 10px; /* Space between charts */
+    margin-bottom: 20px; /* Space below the dual chart container */
+}
+
+.chart-wrapper {
+    flex: 1; /* Make each chart take equal space */
+    min-width: 300px; /* Minimum width for each chart */
+    background-color: #fff; /* White background for charts */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding around charts */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Shadow for charts */
+}
+
+.chart-container {
+    width: 100%; /* Full width */
+    margin: 0 auto; /* Center charts */
+    padding: 5px; /* Padding around charts */
+    background-color: #fff; /* White background for charts */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Shadow for charts */
+    margin-bottom: 20px; /* Reduced margin below chart containers */
+}
+
+/* Adjust the height of charts */
+.chart-container .recharts-wrapper {
+    height: 200px; /* Set height for charts */
+}

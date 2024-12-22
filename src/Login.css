@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* Background and Content */
+.content {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px; /* Prevent the form from touching the edges */
+}
+
+/* Common Form Block Styles */
+.form-block {
+  background-color: rgba(255, 255, 255, 0.9); /* Increased opacity for better contrast */
+  border-radius: 6px; /* Slightly smaller border radius */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Reduced shadow for a lighter feel */
+  width: 100%;
+  max-width: 350px; /* Increased maximum width for better spacing */
+  box-sizing: border-box;
+  display: flex;
+  font-size: 14px;
+  flex-direction: column; /* Align children vertically */
+  padding: 10px 15px; /* Increased left and right padding for more space */
+  margin: 5px 0; /* Reduced margin for a tighter fit */
+}
+
+/* Registration Form Specific Styles */
+.register-form {
+
+  margin-bottom: 100px;
+  padding: 30px; /* Decreased padding for compactness */
+}
+
+/* Common Form Title Styles */
+.form-block h2 {
+  color: #333;
+  text-align: center; /* Center title */
+  margin: 5px 0; /* Space above and below the title */
+  font-size: 18px; /* Smaller font size */
+  font-weight: 600; /* Bold */
+  letter-spacing: 0.5px; /* Spacing between letters */
+  text-transform: uppercase; /* Make the text uppercase for a professional look */
+}
+
+/* Form Group Styles */
+.form-group {
+  width: 40%;
+  margin: -10px 0 1px 0; /* Reduced bottom margin for spacing */
+}
+.container{
+  align-items: center;
+  margin-bottom: 40px;
+  overflow: hidden;
+
+}
+/* Input Styles */
+.form-control {
+  
+  width: 100%; /* Full width */
+  padding: 3px; /* Reduced padding for compactness */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Smaller rounded corners */
+  box-sizing: border-box; /* Include padding and border in width */
+  font-size: 12px; /* Reduced font size for compactness */
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px; /* Reduced padding for compactness */
+  border: none;
+  border-radius: 4px; /* Smaller border radius */
+  cursor: pointer;
+  font-size: 12px; /* Smaller font size */
+  font-weight: bold; /* Bold text for buttons */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+  margin-top: 5px; /* Margin for spacing */
+}
+
+.btn:hover {
+  background-color: darkgreen; /* Slightly darker color on hover */
+}
+
+/* Login Specific Styles */
+.login-form .btn {
+  background-color: green; /* Login button color */
+  color: white;
+}
+
+/* Registration Specific Styles */
+.register-form .btn {
+  background-color: #28a745; /* Registration button color */
+  color: white;
+}
+
+/* Links and Toggles */
+.create-account-link {
+  margin-top: 5px; /* Adjusted margin */
+  text-align: center;
+  font-size: 12px; /* Smaller font size for the link */
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 12px; /* Consistent font size */
+  text-transform: capitalize; /* Capitalize 'Sign Up' and 'Login' */
+  font-weight: 500; /* Add some weight for a refined look */
+  letter-spacing: 0.5px; /* Subtle letter spacing */
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}

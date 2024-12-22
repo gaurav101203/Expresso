@@ -1,0 +1,108 @@
+/* General Layout */
+.admin-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.welcome-video-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Adjust this to the desired height */
+    overflow: hidden;
+}
+
+.welcome-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.admin-header {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(236, 240, 241, 0.8)); /* Gradient background */
+    color: #2c3e50; /* Dark text for contrast */
+    padding: 20px; /* Increased padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Softer shadow */
+}
+
+.logout-btn {
+    background-color: #e74c3c; /* Button color */
+    color: white;
+    border: none;
+    padding: 4px 8px; /* Small padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+    font-size: 12px; /* Smaller font size */
+    font-weight: bold; /* Bold text for emphasis */
+    max-width: 80px; /* Fixed maximum width */
+    height: 30px; /* Fixed height for consistency */
+    display: inline-block; /* Shrinks to fit content */
+    overflow: hidden; /* Prevents overflow */
+    white-space: nowrap; /* Prevents text from wrapping */
+    text-overflow: ellipsis; /* Adds ellipsis for overflowed text */
+}
+
+.logout-btn:hover {
+    background-color: #c0392b; /* Darker color on hover */
+}
+
+.admin-layout {
+    display: flex;
+    flex: 1;
+}
+
+.admin-sidebar {
+    width: 250px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(236, 240, 241, 0.8)); /* Gradient background */
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.admin-sidebar nav ul li a {
+    color: black; /* Dark text for contrast */
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.admin-sidebar nav ul li a:hover,
+.admin-sidebar nav ul li a.active {
+    background-color: rgba(236, 240, 241, 2); /* Subtle hover color */
+}
+
+.admin-main {
+    flex-grow: 1;
+    padding: 20px;
+    background-image: url("./back.jpg"); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    overflow-y: auto;
+    border-left: 1px solid #bdc3c7; /* Added border for separation */
+}
+
+/* Typography */
+h1 { /* Dark text for header */
+    font-size: 24px; /* Consistent size for the header */
+}
+
+/* Optional Font Awesome Icon Integration */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');

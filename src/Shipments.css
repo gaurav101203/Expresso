@@ -1,0 +1,81 @@
+.shipments-container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table-wrapper {
+    max-height: 400px; /* Set a maximum height for the table */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 20px; /* Space between the title and table */
+    border: 1px solid #ddd; /* Optional border for better visibility */
+}
+
+.shipments-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures fixed layout for table */
+}
+
+.shipments-table thead {
+    position: sticky; /* Sticky positioning */
+    top: 0; /* Stick to the top */
+    background-color: #3498db; /* Table header background */
+    color: white; /* Table header text color */
+    z-index: 10; /* Ensure it stays on top */
+}
+
+.shipments-table th, .shipments-table td {
+    border: 1px solid #bdc3c7;
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle; /* Align text vertically in the middle */
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent line breaks */
+    text-overflow: ellipsis; /* Show ellipsis for overflow text */
+}
+
+/* Specific widths for columns */
+.shipments-table th:nth-child(1), /* ID */
+.shipments-table td:nth-child(1) {
+    width: 10%; /* Width for ID column */
+}
+
+.shipments-table th:nth-child(2), /* Carrier Address */
+.shipments-table td:nth-child(2) {
+    width: 25%; /* Width for Carrier Address column */
+}
+
+.shipments-table th:nth-child(3), /* Delivery Address */
+.shipments-table td:nth-child(3) {
+    width: 25%; /* Width for Delivery Address column */
+}
+
+.shipments-table th:nth-child(4), /* Shipment Date */
+.shipments-table td:nth-child(4) {
+    width: 15%; /* Width for Shipment Date column */
+}
+
+.shipments-table th:nth-child(5), /* Delivery Date */
+.shipments-table td:nth-child(5) {
+    width: 15%; /* Width for Delivery Date column */
+}
+
+.shipments-table th:nth-child(6), /* Actions */
+.shipments-table td:nth-child(6) {
+    width: 10%; /* Width for Actions column */
+}
+
+.delete-button {
+    background-color: #e74c3c; /* Red */
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
