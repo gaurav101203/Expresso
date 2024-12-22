@@ -19,7 +19,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: '*', // Adjust the origin as per your requirements
+    origin: '*', // Adjust this to only include trusted domains
     methods: ['GET', 'POST'],
   },
 });
