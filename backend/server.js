@@ -107,6 +107,6 @@ io.on('connection', (socket) => {
 });
 
 // Start server and WebSocket
-app.listen(PORT,'0.0.0.0' () => {
+app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
