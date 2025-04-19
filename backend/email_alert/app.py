@@ -40,8 +40,4 @@ def send_email():
         return jsonify({"error": "Failed to send email"}), 500
 
 if __name__ == '__main__':
-<<<<<<< HEAD
     app.run(debug=True,host='0.0.0.0', port=5001)  # Running on a different port
-=======
-    app.run(debug=True, port=5001)
->>>>>>> dc12128f05b08c8ba8748db46f72fb47c53d087a
