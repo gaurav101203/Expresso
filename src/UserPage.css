@@ -1,0 +1,311 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logistics-container {
+    display: flex;
+    flex-direction: column;
+}
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+
+.contain {
+    display: flex;
+    align-items: center;
+    margin-right: 750px;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+/* Logo Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+}
+
+/* Center Heading */
+.heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+/* Logout Button Styling */
+.logout-button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    margin-right: 40px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #ff3333;
+}
+
+
+/* Styling for clickable sections */
+section-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Space between sections */
+}
+
+/* Section Styles */
+.section {
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    margin-top: 80px;
+    margin-bottom: 200px;
+    border-radius: 10px; /* Rounded corners */
+    width: 180px; /* Adjusted width for better layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Padding inside section */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.section:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Dark background on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+.section-image {
+    width: 60%; /* Responsive image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 5px; /* Space between image and text */
+}
+
+/* Modal form styling */
+.form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* Form Styling */
+.form {
+    margin-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 90%; /* Full width for responsiveness on small screens */
+    max-width: 300px; /* Limit the width of the form */
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 30px; /* Padding inside the form */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Center-align text within form */
+}
+
+/* Input Field Styling */
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Submit Button Styling */
+.form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Optional Close Button for Modal */
+.close-button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+/* Chatbot Icon */
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-bottom: 60px;
+}
+
+.chatbot-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Chatbot Modal */
+.chatbot-modal {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Chatbot Content */
+.chatbot-content {
+    padding: 10px;
+}
+
+.chatbot-content h3 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+/* Chatbot Messages */
+.chatbot-messages {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.chatbot-messages p {
+    margin: 5px 0;
+    padding: 6px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    max-width: 75%;
+}
+
+.bot-message {
+    background: #e0e0e0;
+    color: #333;
+    align-self: flex-start;
+}
+
+.user-message {
+    background: #5ca6fa;
+    color: #fff;
+    align-self: flex-end;
+}
+
+/* Predefined Queries */
+.predefined-queries button {
+    padding: 6px 8px;
+    font-size: 0.85rem;
+    background: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+/* Input and Send Button */
+.user-input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.send-button {
+    width: 100%;
+    padding: 8px;
+    background: green;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    .chatbot-modal {
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+
+
+
+/* Sticky Footer */
+.footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

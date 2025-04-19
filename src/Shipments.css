@@ -1,0 +1,258 @@
+.shipments-container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table-wrapper {
+    max-height: 400px; /* Set a maximum height for the table */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 20px; /* Space between the title and table */
+    border: 1px solid #ddd; /* Optional border for better visibility */
+}
+
+.shipments-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures fixed layout for table */
+}
+
+.shipments-table thead {
+    position: sticky; /* Sticky positioning */
+    top: 0; /* Stick to the top */
+    background-color: #3498db; /* Table header background */
+    color: white; /* Table header text color */
+    z-index: 10; /* Ensure it stays on top */
+}
+
+.shipments-table th, .shipments-table td {
+    border: 1px solid #bdc3c7;
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle; /* Align text vertically in the middle */
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent line breaks */
+    text-overflow: ellipsis; /* Show ellipsis for overflow text */
+}
+
+/* Specific widths for columns */
+.shipments-table th:nth-child(1), /* ID */
+.shipments-table td:nth-child(1) {
+    width: 10%; /* Width for ID column */
+}
+
+.shipments-table th:nth-child(2), /* Carrier Address */
+.shipments-table td:nth-child(2) {
+    width: 25%; /* Width for Carrier Address column */
+}
+
+.shipments-table th:nth-child(3), /* Delivery Address */
+.shipments-table td:nth-child(3) {
+    width: 25%; /* Width for Delivery Address column */
+}
+
+.shipments-table th:nth-child(4), /* Shipment Date */
+.shipments-table td:nth-child(4) {
+    width: 15%; /* Width for Shipment Date column */
+}
+
+.shipments-table th:nth-child(5), /* Delivery Date */
+.shipments-table td:nth-child(5) {
+    width: 15%; /* Width for Delivery Date column */
+}
+
+.shipments-table th:nth-child(6), /* Actions */
+.shipments-table td:nth-child(6) {
+    width: 10%; /* Width for Actions column */
+}
+
+.delete-button {
+    background-color: #e74c3c; /* Red */
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+.shipments-container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Keeping the container slightly transparent */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table-wrapper {
+    max-height: 500px; /* Adjusted max height for better display */
+    overflow-y: auto; /* Enables vertical scrolling */
+    margin-top: 20px; /* Space between the title and table */
+    border: 1px solid #ddd; /* Optional border for better visibility */
+    border-radius: 5px; /* Rounded corners for the table wrapper */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent; /* Transparent background for the table */
+}
+
+.shipments-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Allow the table to adjust column widths based on content */
+    background-color: transparent; /* Ensure the table itself has a transparent background */
+}
+
+.shipments-table thead {
+    position: sticky; /* Sticky positioning for header */
+    top: 0; /* Stick to the top */
+    background-color: rgba(52, 152, 219, 0.9); /* Slight transparency for table header */
+    color: white; /* Table header text color */
+    z-index: 10; /* Ensure it stays on top */
+}
+
+.shipments-table th,
+.shipments-table td {
+    border: 1px solid #bdc3c7;
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle; /* Align text vertically in the middle */
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent line breaks */
+    text-overflow: ellipsis; /* Show ellipsis for overflow text */
+    background-color: transparent; /* Ensures each cell has a transparent background */
+}
+
+/* Specific widths for columns */
+.shipments-table th:nth-child(1), /* ID */
+.shipments-table td:nth-child(1) {
+    width: 10%; /* Width for ID column */
+}
+
+.shipments-table th:nth-child(2), /* Carrier Address */
+.shipments-table td:nth-child(2) {
+    width: 20%; /* Width for Carrier Address column */
+}
+
+.shipments-table th:nth-child(3), /* Delivery Address */
+.shipments-table td:nth-child(3) {
+    width: 20%; /* Width for Delivery Address column */
+}
+
+.shipments-table th:nth-child(4), /* Shipment Date */
+.shipments-table td:nth-child(4) {
+    width: 15%; /* Width for Shipment Date column */
+}
+
+.shipments-table th:nth-child(5), /* Delivery Date */
+.shipments-table td:nth-child(5) {
+    width: 15%; /* Width for Delivery Date column */
+}
+
+.shipments-table th:nth-child(6), /* Product Name */
+.shipments-table td:nth-child(6) {
+    width: 15%; /* Width for Product Name column */
+}
+
+.shipments-table th:nth-child(7), /* Quantity */
+.shipments-table td:nth-child(7) {
+    width: 10%; /* Width for Quantity column */
+}
+
+.shipments-table th:nth-child(8), /* Actions */
+.shipments-table td:nth-child(8) {
+    width: 10%; /* Width for Actions column */
+}
+
+.delete-button {
+    background-color: #e74c3c; /* Red */
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Eye Icon */
+.eye-icon {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #007bff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.eye-icon:hover {
+    transform: scale(1.2);
+    color: #0056b3;
+}
+
+/* Popup Container */
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+/* Popup Content */
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.popup-content h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Dropdown & Inputs */
+.popup-content select,
+.popup-content input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Action Buttons */
+.popup-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popup-actions button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.popup-actions button:hover {
+    background-color: #0056b3;
+}
+
+/* Status Message */
+.status-message {
+    font-weight: bold;
+    color: green;
+    text-align: center;
+}
